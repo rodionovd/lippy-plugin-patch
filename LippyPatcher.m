@@ -20,6 +20,12 @@
     [originalLippyBundle load];
     NSCAssert(NSClassFromString(@"Lippy"), @"The original Lippy bundle was not loaded successfully");
 
+    // Lippy 1.1.2 => build 192
+    if (![[originalLippyBundle objectForInfoDictionaryKey:(NSString *)kCFBundleVersionKey] isEqualToString:@"192"]) {
+        NSLog(@"[LippyPatcher] Unexpected Lippy plugin version, abort the patch");
+        return;
+    }
+
     Class MSDocument = NSClassFromString(@"MSDocument");
     NSCAssert(MSDocument != nil, @"");
     [MSDocument aspect_hookSelector:@selector(valueForKeyPath:) withOptions:AspectPositionInstead usingBlock:^(id<AspectInfo> aspectInfo, NSString *keyPath) {
