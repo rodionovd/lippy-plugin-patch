@@ -164,6 +164,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		0A4367B32BEA32DF00ED759F /* 🗿 Rename the original .framework to be a .bundle */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
