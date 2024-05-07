@@ -8,4 +8,4 @@ This is a runtime patch for [Lippy.sketchplugin](https://github.com/abynim/lippy
 
 ### Approach
 
-Instead of manually re-writing `-[LippyMainViewController showEditorForContext:]` to use proper Sketch APIs (which might have been easier in retrospect 🗿) this patch intercepts various `-valueForKeyPath:` calls made by the plugin on Sketch data models, and makes them return stuff in a format that Lippy expects. See [LippyPatcher.m](./LippyPatcher.m) for details.
+Instead of manually re-writing `-[LippyMainViewController showEditorForContext:]` and a few other methods to use proper Sketch APIs (which might have been easier in retrospect 🗿) this patch intercepts various `-valueForKeyPath:` calls made by the plugin on Sketch data models, and makes them return stuff in a format that Lippy expects. See [LippyPatcher.m](./LippyPatcher.m) for details.
