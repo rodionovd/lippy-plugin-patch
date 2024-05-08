@@ -1,10 +1,10 @@
 ## lippy-plugin-patch
 
+> [!WARNING]
+> **@abynim** was kind enough to grant me access to the original Lippy source code, so I brought all those compatibility patches upstream.
+> Which means, go download [an official plugin](https://github.com/abynim/lippy/) instead – it works fine now; don't use this patch.
+
 This is a runtime patch for [Lippy.sketchplugin](https://github.com/abynim/lippy/) by **@abynim** that makes it fully compatible with the latest version of Sketch (v100 at the time of writing).
-
-> [!TIP]
-> A pre-patched plugin is available to download [here](https://github.com/rodionovd/lippy-plugin-patch/releases).
-
 
 ### Approach
 
